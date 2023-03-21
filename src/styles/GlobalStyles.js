@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   --menuWidth: 100vw;
   --blockquote: 20px;
   --background: #1b1b1b;
-  --primary: #ffc400;
+  --primary: #6dfaff;
   --bodyColor: #afc2cb;
   --inActive: #555;
   --letterSpacing: -0.075rem;
@@ -25,9 +25,9 @@ export const GlobalStyle = createGlobalStyle`
 
   @media(min-width:375px) {
     --bannerTitle: 36px;    
-    --h2: 22px;
+    --h2: 26px;
     --h3: 21px;
-    --h4: 20px;
+    --h4: 22px;
     --h5: 19px;
     --h6: 18px;
     --sectionMargin: 80px;
@@ -77,7 +77,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
 body {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

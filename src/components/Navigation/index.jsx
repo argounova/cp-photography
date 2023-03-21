@@ -64,7 +64,6 @@ const Navigation = () => {
                 <LogoStyles>
                   <Link to="/">
                     {title}
-                    <span>.</span>
                   </Link>
                 </LogoStyles>
               )}
@@ -87,7 +86,6 @@ const Navigation = () => {
                     activeClassName="menu__item--active"
                   >
                     {item.text}
-                    <span>.</span>
                   </Link>
                 </li>
               ))}
@@ -97,7 +95,6 @@ const Navigation = () => {
                     onClick={toggleSubNav}
                     onKeyDown={toggleSubNav}
                   >
-                    Products<span>.</span>
                     <Chevron />
                   </button>
     
@@ -112,7 +109,7 @@ const Navigation = () => {
                         onKeyDown={toggleNav}
                         to="/products"
                       >
-                        All Products<span>.</span>
+                        All Products
                       </Link>
                     </li>
                     <hr />
@@ -126,7 +123,6 @@ const Navigation = () => {
                             to={gatsbyPath}
                           >
                             {title}
-                            <span>.</span>
                           </Link>
                         </li>
                       )

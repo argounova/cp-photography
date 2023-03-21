@@ -51,7 +51,7 @@ export const NavTopLevel = styled.ul`
   > li > button {
     text-transform: capitalize;
     font-size: var(--h2);
-    font-weight: 700;
+    font-weight: 400;
     cursor: pointer;
     transition: color 0.3s ease;
 
@@ -85,7 +85,6 @@ export const NavTopLevel = styled.ul`
     padding: 0;
     color: #fff;
     border: none;
-    font-family: "Heebo", sans-serif;
     display: flex;
     align-items: center;
   }
@@ -113,7 +112,7 @@ export const SubNavStyles = styled(motion.ul)`
 
   > li {
     font-size: var(--h4);
-    font-weight: 700;
+    font-weight: 400;
 
     &:hover {
       > a {
@@ -160,9 +159,10 @@ export const HamburgerStyles = styled(motion.button)`
 `
 
 export const LogoStyles = styled.div`
-  font-weight: 700;
+  font-weight: 300;
   font-size: 20px;
   letter-spacing: -0.5px;
+  font-family: 'Josefin Sans';
 
   a {
     color: #fff;
@@ -171,7 +171,7 @@ export const LogoStyles = styled.div`
   }
 
   @media (min-width: 1024px) {
-    font-size: 25px;
+    font-size: 28px;
   }
 
   span {
