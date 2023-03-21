@@ -1,17 +1,12 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import {
-  heading,
-  headingAccent,
-} from './index.module.css'
+import { heading } from './index.module.css'
 
 const IndexPage = () => {
   return (
     <Layout>
       <h1 className={heading}>
-        CP Photography
-        <br />
-        <span className={headingAccent}>coming soon</span>
+        Coming Soon
       </h1>
     </Layout>
   )

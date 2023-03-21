@@ -4,16 +4,22 @@ import {
   pageGradientA,
   pageGradientB,
 } from './index.module.css'
+import Navigation from '../Navigation/index'
+import { GlobalStyle } from "../../styles/GlobalStyles"
 
 const Layout = ({ children }) => {
     return (
-        <main className={pageImage}>
-            <div className={pageGradientA}>
-                <div className={pageGradientB}>
-                    {children}
-                </div>
-            </div>
-        </main>  
+        <>
+            <GlobalStyle />
+                <main className={pageImage}>
+                    <div className={pageGradientA}>
+                        <div className={pageGradientB}>
+                            <Navigation />
+                            {children}
+                        </div>
+                    </div>
+                </main>  
+        </>
     )
 }
 
