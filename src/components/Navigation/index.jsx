@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { motion } from "framer-motion"
-import { menuItems } from "./constants"
+import { galleryItems, menuItems } from "./constants"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 import { FiChevronDown as Chevron } from "react-icons/fi"
 import {
@@ -97,36 +97,24 @@ const Navigation = () => {
                   >
                     <Chevron />
                   </button>
-    
                   <SubNavStyles
                     initial="closed"
                     animate={subNavIsOpen ? "open" : "closed"}
                     variants={subMenuNavVariants}
                   >
-                    <li>
-                      <Link
-                        onClick={toggleNav}
-                        onKeyDown={toggleNav}
-                        to="/products"
-                      >
-                        All Products
-                      </Link>
-                    </li>
-                    <hr />
-                    {/* {featuredProduct.map((item, index) => {
-                      const { gatsbyPath, title } = item
-                      return (
-                        <li key={index}>
-                          <Link
-                            onClick={toggleNav}
-                            onKeyDown={toggleNav}
-                            to={gatsbyPath}
-                          >
-                            {title}
-                          </Link>
-                        </li>
-                      )
-                    })} */}
+                    {galleryItems.map((item, index) => (
+                      <li key={index}>
+                        <Link
+                          to={item.path}
+                          activeClassName="menu__item--active"
+                          onClick={toggleNav}
+                          onKeyDown={toggleNav}
+                        >
+                        {item.text}
+                        </Link>
+                        <hr />
+                      </li>
+                    ))}
                   </SubNavStyles>
                 </li>
             </NavTopLevel>

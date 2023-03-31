@@ -1,18 +1,25 @@
 export const menuItems = [
   {
-    path: "/",
-    text: "home",
-  },
-  {
-    path: "/about",
-    text: "about",
-  },
-  {
-    path: "/news",
-    text: "news",
-  },
-  {
     path: "/contact",
     text: "contact",
+  },
+  {
+    path: "/gallery",
+    text: "gallery",
+  },
+]
+
+export const galleryItems = [
+  {
+    path: "/architecture",
+    text: "Architecture",
+  },
+  {
+    path: "/automotive",
+    text: "Automotive",
+  },
+  {
+    path: "/landscape",
+    text: "Landscape",
   },
 ]

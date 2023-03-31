@@ -6,12 +6,20 @@ module.exports = {
     title: `CP Photography`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
-    },
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp", 
+    {
+      resolve: 'gatsby-source-filesystem',
+      // options: {
+      //   "name": "images",
+      //   "path": "./src/images/"
+      // },
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
     resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
